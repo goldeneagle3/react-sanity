@@ -1,0 +1,100 @@
+.loading{
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(43deg, #111c19, #2a3635, #252727, #3f4141);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 79% 0%
+  }
+
+  50% {
+    background-position: 22% 100%
+  }
+
+  100% {
+    background-position: 79% 0%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 79% 0%
+  }
+
+  50% {
+    background-position: 22% 100%
+  }
+
+  100% {
+    background-position: 79% 0%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 79% 0%
+  }
+
+  50% {
+    background-position: 22% 100%
+  }
+
+  100% {
+    background-position: 79% 0%
+  }
+}
+.loading__content{
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 3rem;
+}
+
+.loading__content > .baslık{
+  font-size: clamp(1rem , 6vw, 2.5rem);
+  margin-bottom: 2rem;
+  font-family: 'Shippori Mincho B1',
+  serif;
+  color: #df686e;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+.back{
+  margin-top: 2rem;
+  padding: 10px;
+  font-size: x-large;
+  color: #ff6;
+  text-decoration: none;
+  border: 1px solid #ff6;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Lucida Sans',
+  'Lucida Sans Regular',
+  'Lucida Grande',
+  'Lucida Sans Unicode',
+  Geneva,
+  Verdana,
+  sans-serif;
+}
+
+.back:hover{
+  background-color: #ff6;
+  color: #141a19;
+}

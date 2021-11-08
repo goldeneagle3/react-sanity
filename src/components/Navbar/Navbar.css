@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Oi&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+.navbar {
+  display: flex;
+  /* background: #292828; */
+  background-image: linear-gradient(to left, #311e2d, #ce879e);
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  position: sticky;
+  z-index: 50;
+}
+
+.navbar.scroll{
+  position: fixed;
+  height: 60px;
+  
+  
+}
+
+.navbar__logo {
+  text-decoration: none;
+  color: #311e2d;
+  font-size: clamp(0.8rem, 6vw, 3rem);
+  /* font-weight: bolder; */
+  /* font-family: "Oi", cursive; */
+  font-family: "Lobster", cursive;
+  margin-left: 1rem;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+
+.active{
+  background: #251623;
+  color: #ce879e;
+}
+
+.navbar__links {
+  justify-content: space-evenly;
+  padding-left: 1.5rem;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bolder;
+  color: #ce879e;
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 10px;
+}
+.navbar__links {
+  margin-right: 1.7rem;
+}
+.navbar__links > span {
+  position: relative;
+  top: -2px;
+}
+
+.navbar__links:hover {
+  background: #251623;
+  color: #ce879e;
+}
+
+.navbar__hamburger {
+  display: none;
+  font-size: 1.7rem;
+  color: #ce879e;
+  cursor: pointer;
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .navbar {
+    height: 70px;
+  }
+  .navbar__links {
+    display: none;
+  }
+  .navbar__hamburger {
+    display: flex;
+    margin-right: 1rem;
+  }
+  .navbar__hamburger:hover {
+    color: pink;
+  }
+}

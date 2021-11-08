@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700&display=swap');
+
+.footer {
+  height: 100%;
+  width: 100%;
+  background: #1a1818;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 10px 0 0;
+}
+
+.footer-top{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: 
+  "a a a a a h h h h h h h";
+  column-gap: 2rem;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-area: a;
+  padding: 20px;
+  color: wheat;
+}
+
+.logo{
+  font-size: 40px;
+  font-family: "Lobster",cursive;
+  padding: 10px;
+}
+
+
+
+.footer__left> .subtitle{
+  margin: 1rem auto;
+  font-family: 'Lato',
+  sans-serif;
+}
+
+.iletisim{
+  margin-top: 1rem;
+}
+
+.iletisim > h4{
+  font-family: 'Courier New',
+  Courier,
+  monospace;
+  font-size: 25px;
+}
+
+.iletisim > p {
+  font-family: 'Lato',
+  sans-serif;
+}
+
+.footer__right {
+  grid-area: h;
+  color: wheat;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer__right> h2 {
+  font-size: x-large;
+  font-family: 'Courier New', Courier, monospace ;
+  padding: 10px;
+}
+
+
+.footer__right > ul > li{
+  letter-spacing: 1px;
+  margin-top: 2px;
+  color: #bdb0b0;
+  list-style: none;
+  font-family: 'Open Sans',
+  sans-serif;
+}
+
+
+.footer-bottom{
+  border-top: 1px rgb(141, 141, 126) solid;
+  color: #d1bbbb;
+  text-align: center;
+  margin-top: 10px;
+  padding: 4px;
+  font-family: 'Shippori Mincho B1',
+  serif;
+}
+
+@media (max-width: 760px) {
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "a a a a a a a a a a a a"  
+    "h h h h h h h h h h h h"
+    ;
+    
+  }
+}
